@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edemy</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Top Navbar -->
+    <div class="bg-black py-4">
+        <div class="container mx-auto px-4 sm:px-8 md:px-16 flex justify-between items-center text-white">
+            <!-- Logo and Library Dropdown -->
+            <div class="flex items-center gap-4 md:gap-6">
+                <!-- Placeholder for logo, update with logo image -->
+                <img src="image/header-logo.png" alt="Logo" class="h-8 w-8 md:h-12 md:w-12" />
+                <a href="#" class="text-xl md:text-3xl font-semibold">EDUMY</a>
+                <div class="relative group hidden md:block">
+                    <button class="bg-blue-700 text-white focus:outline-none border-2 border-blue-700 py-2 px-4 rounded text-base md:text-lg hover:bg-blue-800">Library <span class="ml-2">&#x25BC;</span></button>
+                    <div class="absolute hidden group-hover:block bg-gray-200 text-black mt-2 py-2 w-40 shadow-lg">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-300">Development</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-300">Business</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <input type="text" placeholder="Search for the software or skills you want to learn"
+            class="bg-white text-black px-4 py-2 rounded-full focus:outline-none text-sm md:text-base placeholder-gray-600 w-full max-w-xs md:max-w-xl hidden sm:block">
+
+            <!-- Hamburger Menu for Mobile -->
+            <button id="hamburger" class="text-white md:hidden">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Contact Info and Language Selector -->
+            <div class="flex items-center gap-4 md:gap-8 hidden md:flex">
+                <span class="text-sm md:text-lg">+977 9817900948</span>
+                <div class="relative group">
+                    <button class="text-white focus:outline-none text-sm md:text-lg">English <span class="ml-2">&#x25BC;</span></button>
+                    <div class="absolute hidden group-hover:block bg-white text-black mt-2 py-2 w-20 shadow-lg">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">English</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Spanish</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="bg-gray-900 py-4 md:py-6">
+        <div class="container mx-auto px-4 sm:px-8 md:px-16 flex items-center justify-between">
+            <!-- Main Navigation Links -->
+            <ul id="nav-links" class="flex flex-col md:flex-row items-center gap-4 md:gap-8 text-white text-sm md:text-lg hidden md:flex">
+                <li class="relative group">
+                    <a href="#" class="hover:text-gray-400 flex items-center">Home <span class="ml-2">&#x25BC;</span></a>
+                    <!-- Dropdown content -->
+                    <ul class="absolute hidden group-hover:block bg-white text-black mt-2 py-2 w-40 shadow-lg">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Home 1</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Home 2</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Home 3</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Home 4</a></li>
+                    </ul>
+                </li>
+                <li class="relative group">
+                    <a href="#" class="hover:text-gray-400 flex items-center">Courses <span class="ml-2">&#x25BC;</span></a>
+                    <!-- Dropdown content -->
+                    <ul class="absolute hidden group-hover:block bg-white text-black mt-2 py-2 w-40 shadow-lg">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Course List</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Course Single</a></li>
+                    </ul>
+                </li>
+                <li class="relative group">
+                    <a href="#" class="hover:text-gray-400 flex items-center">Events <span class="ml-2">&#x25BC;</span></a>
+                    <!-- Dropdown content -->
+                    <ul class="absolute hidden group-hover:block bg-white text-black mt-2 py-2 w-40 shadow-lg">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Event List</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Event Single</a></li>
+                    </ul>
+                </li>
+                <li class="relative group">
+                    <a href="#" class="hover:text-gray-400 flex items-center">Pages <span class="ml-2">&#x25BC;</span></a>
+                    <!-- Dropdown content -->
+                    <ul class="absolute hidden group-hover:block bg-white text-black mt-2 py-2 w-40 shadow-lg">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Shop Page</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">User Admin</a></li>
+                    </ul>
+                </li>
+                <li class="relative group">
+                    <a href="#" class="hover:text-gray-400 flex items-center">Blog <span class="ml-2">&#x25BC;</span></a>
+                    <!-- Dropdown content -->
+                    <ul class="absolute hidden group-hover:block bg-white text-black mt-2 py-2 w-40 shadow-lg">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Blog List 1</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Blog List 2</a></li>
+                    </ul>
+                </li>
+                <li class="relative group">
+                    <a href="#" class="hover:text-gray-400 flex items-center">Contact <span class="ml-2"></span></a>
+                </li>
+            </ul>
+
+            <!-- Secondary Links -->
+            <div id="secondary-links" class="flex flex-col md:flex-row items-center gap-4 text-white text-sm md:text-lg hidden md:flex">
+                <a href="#" class="hover:text-gray-400 flex items-center">
+                    <i class="fas fa-chalkboard-teacher mr-2"></i> Become an Instructor
+                </a>
+                <a href="#" class="hover:text-gray-400 flex items-center">
+                    <i class="fas fa-sign-in-alt mr-2"></i> Login/Register
+                </a>
+            </div>
+        </div>
+    </nav>
+    <script src="public/app.js"></script>
+</body>
+
+</html>
