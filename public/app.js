@@ -1,9 +1,16 @@
-
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
-const secondaryLinks = document.getElementById('secondary-links');
-
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('hidden');
-    secondaryLinks.classList.toggle('hidden');
+document.addEventListener('DOMContentLoaded', function () {
+  const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+  });
 });
+
+  
+  
