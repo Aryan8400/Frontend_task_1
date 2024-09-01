@@ -2,13 +2,15 @@
 <html lang="en">
 
 <head>
+    <!---Meta Tag-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edemy</title>
+    <title>Edumy</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
 </head>
 
 <body class="bg-gray-100">
@@ -22,10 +24,11 @@
                 <img src="image/header-logo.png" alt="Logo" class="h-8 w-8 md:h-12 md:w-12" />
                 <a href="#" class="text-xl md:text-3xl font-semibold">EDUMY</a>
                 <div class="relative group hidden md:block">
-                    <button class="bg-blue-700 text-white focus:outline-none border-2 border-blue-700 py-2 px-4 rounded text-base md:text-lg hover:bg-blue-800">
+                    <button class="bg-blue-700 text-white focus:outline-none border-2 border-blue-700 py-2 px-4 rounded text-base md:text-lg hover:bg-blue-800 focus:bg-blue-800">
                         Library <span class="ml-2">&#x25BC;</span>
                     </button>
-                    <div class="absolute hidden group-hover:block bg-gray-400 text-black mt-2 py-2 w-40 shadow-lg z-50">
+                    <div class="absolute hidden group-hover:block group-focus-within:block bg-gray-400 text-black mt-2 py-2 w-40 shadow-lg z-50">
+                 
                         <a href="#" class="block px-4 py-2 hover:bg-gray-300">Development</a>
                         <a href="#" class="block px-4 py-2 hover:bg-gray-300">Business</a>
                         <a href="#" class="block px-4 py-2 hover:bg-gray-300">IT</a>
@@ -45,11 +48,12 @@
             <!-- Contact Info and Language Selector -->
             <div class="flex items-center gap-4 md:gap-8 ">
                 <span class="text-sm md:text-lg">+977 9817900948</span>
-                <div class="relative group hidden md:block">
-                    <button class="text-white focus:outline-none text-sm md:text-lg">
+                <div class="relative group">
+                    <button class="text-white focus:outline-none text-sm md:text-lg focus:text-gray-800">
                         English <span class="ml-2">&#x25BC;</span>
                     </button>
-                    <div class="absolute hidden group-hover:block bg-gray-400 text-black mt-2 py-2 w-32 shadow-lg z-50">
+                    <!--Dropdown Option For Language Button-->
+                    <div class="absolute hidden group-hover:block group-focus-within:block bg-gray-400 text-black mt-2 py-2 w-32 shadow-lg z-50">
                         <a href="#" class="block px-4 py-2 hover:bg-gray-200">English</a>
                         <a href="#" class="block px-4 py-2 hover:bg-gray-200">Spanish</a>
                         <a href="#" class="block px-4 py-2 hover:bg-gray-200">French</a>
@@ -60,89 +64,92 @@
         </div>
     </div>
 
-    <!-- Main Navbar -->
-    <nav class="bg-gray-900 py-4 md:py-6 sticky top-0 z-40 ">
-        <div class="container mx-auto px-4 sm:px-8 md:px-16 flex items-center justify-between">
-            <!-- Main Navigation Links -->
-            <ul id="nav-links" class="flex flex-col md:flex-row items-center gap-4 md:gap-8 text-white text-sm md:text-lg hidden md:flex">
-                <li class="relative group">
-                    <a href="#" class="hover:text-gray-800 flex items-center">Home <span class="ml-2">&#x25BC;</span></a>
-                    <!-- Dropdown content -->
-                    <ul class="absolute hidden group-hover:block bg-gray-400 text-black mt-2 py-2 w-40 shadow-lg z-30">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Home 1</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Home 2</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Home 3</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Home 4</a></li>
-                    </ul>
-                </li>
-                <li class="relative group">
-                    <a href="#" class="hover:text-gray-400 flex items-center">Courses <span class="ml-2">&#x25BC;</span></a>
-                    <!-- Dropdown content -->
-                    <ul class="absolute hidden group-hover:block bg-gray-400 text-black mt-2 py-2 w-40 shadow-lg z-10">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Course List</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Course Single</a></li>
-                    </ul>
-                </li>
-                <li class="relative group">
-                    <a href="#" class="hover:text-gray-400 flex items-center">Events <span class="ml-2">&#x25BC;</span></a>
-                    <!-- Dropdown content -->
-                    <ul class="absolute hidden group-hover:block bg-gray-400 text-black mt-2 py-2 w-40 shadow-lg z-10">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Event List</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Event Single</a></li>
-                    </ul>
-                </li>
-                <li class="relative group">
-                    <a href="#" class="hover:text-gray-400 flex items-center">Pages <span class="ml-2">&#x25BC;</span></a>
-                    <!-- Dropdown content -->
-                    <ul class="absolute hidden group-hover:block bg-gray-400 text-black mt-2 py-2 w-40 shadow-lg z-10">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Shop Page</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">User Admin</a></li>
-                    </ul>
-                </li>
-                <li class="relative group">
-                    <a href="#" class="hover:text-gray-400 flex items-center">Blog <span class="ml-2">&#x25BC;</span></a>
-                    <!-- Dropdown content -->
-                    <ul class="absolute hidden group-hover:block bg-gray-400 text-black mt-2 py-2 w-40 shadow-lg z-10">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Blog List 1</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Blog List 2</a></li>
-                    </ul>
-                </li>
-                <li class="relative group">
-                    <a href="#" class="hover:text-gray-400 flex items-center">Contact <span class="ml-2"></span></a>
-                </li>
-            </ul>
+   <!-- Main Navbar -->
+<nav class="bg-gray-900 py-4 md:py-6 sticky top-0 z-40">
+    <div class="container mx-auto px-4 sm:px-8 md:px-16 flex items-center justify-between">
+        <!-- Main Navigation Links -->
+        <ul id="nav-links" class="flex flex-col md:flex-row items-center gap-4 md:gap-8 text-white text-sm md:text-lg">
+            <!-- Home Menu Item -->
+            <li class="relative group">
+                <a href="#" class="flex items-center hover:text-gray-400">Home <span class="ml-2">&#x25BC;</span></a>
+                <!-- Dropdown content -->
+                <ul class="absolute hidden group-hover:block group-focus-within:block bg-gray-400 text-black mt-2 py-2 w-40 shadow-lg z-50">
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Home 1</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Home 2</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Home 3</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Home 4</a></li>
+                </ul>
+            </li>
+            <!-- Courses Menu Item -->
+            <li class="relative group">
+                <a href="#" class="flex items-center hover:text-gray-400">Courses <span class="ml-2">&#x25BC;</span></a>
+                <!-- Dropdown content -->
+                <ul class="absolute hidden group-hover:block group-focus-within:block bg-gray-400 text-black mt-2 py-2 w-40 shadow-lg z-50">
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Course List</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Course Single</a></li>
+                </ul>
+            </li>
+            <!-- Events Menu Item -->
+            <li class="relative group">
+                <a href="#" class="flex items-center hover:text-gray-400">Events <span class="ml-2">&#x25BC;</span></a>
+                <!-- Dropdown content -->
+                <ul class="absolute hidden group-hover:block group-focus-within:block bg-gray-400 text-black mt-2 py-2 w-40 shadow-lg z-50">
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Event List</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Event Single</a></li>
+                </ul>
+            </li>
+            <!-- Pages Menu Item -->
+            <li class="relative group">
+                <a href="#" class="flex items-center hover:text-gray-400">Pages <span class="ml-2">&#x25BC;</span></a>
+                <!-- Dropdown content -->
+                <ul class="absolute hidden group-hover:block group-focus-within:block bg-gray-400 text-black mt-2 py-2 w-40 shadow-lg z-50">
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Shop Page</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">User Admin</a></li>
+                </ul>
+            </li>
+            <!-- Blog Menu Item -->
+            <li class="relative group">
+                <a href="#" class="flex items-center hover:text-gray-400">Blog <span class="ml-2">&#x25BC;</span></a>
+                <!-- Dropdown content -->
+                <ul class="absolute hidden group-hover:block group-focus-within:block bg-gray-400 text-black mt-2 py-2 w-40 shadow-lg z-50">
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Blog List 1</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-300">Blog List 2</a></li>
+                </ul>
+            </li>
+            <!-- Contact Menu Item -->
+            <li class="relative">
+                <a href="#" class="hover:text-gray-400 flex items-center">Contact</a>
+            </li>
+        </ul>
 
-            <!-- Secondary Links -->
-            <div id="secondary-links" class="flex flex-col md:flex-row items-center gap-4 text-white text-sm md:text-lg hidden md:flex">
-                <a href="#" class="hover:text-gray-400 flex items-center">
-                    <i class="fas fa-chalkboard-teacher mr-2"></i> Become an Instructor
-                </a>
-                <a href="#" class="hover:text-gray-400 flex items-center">
-                    <i class="fas fa-sign-in-alt mr-2"></i> Login/Register
-                </a>
-            </div>
+        <!-- Secondary Links -->
+        <div id="secondary-links" class="flex flex-col md:flex-row items-center gap-4 text-white text-sm md:text-lg">
+            <a href="#" class="hover:text-gray-400 flex items-center">
+                <i class="fas fa-chalkboard-teacher mr-2"></i> Become an Instructor
+            </a>
+            <a href="#" class="hover:text-gray-400 flex items-center">
+                <i class="fas fa-sign-in-alt mr-2"></i> Login/Register
+            </a>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <!-- Image Slider with Restricted Height -->
-<div class="swiper-container relative z-0 h-[90vh] overflow-hidden">
+    <!-- Image Slider with Responsive Height -->
+<div class="swiper-container-image relative z-0 h-[70vh] sm:h-[80vh] md:h-[90vh] overflow-hidden">
     <div class="swiper-wrapper">
         <!-- Slide 1 -->
         <div class="swiper-slide relative">
-            <img src="image/slide.jpg" alt="Slide 1" class="w-full h-full object-cover">
-
+            <img src="image/image11.jpg" alt="Slide 1" class="w-full h-full object-cover">
             <!-- Content Overlay -->
-            <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
-                <!-- Heading -->
-                <h2 class="text-white text-4xl md:text-6xl font-bold mb-4">Start Investing in You</h2>
-
-                <!-- Paragraph -->
-                <p class="text-white text-sm md:text-lg mb-6 max-w-2xl">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                <h2 class="text-white text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-4">
+                    Start Investing in You
+                </h2>
+                <p class="text-white text-xs sm:text-sm md:text-lg lg:text-xl mb-6 max-w-2xl">
                     Technology is bringing a massive wave of evolution on learning things in different ways.
                 </p>
-
-                <!-- Button -->
-                <a href="#" class="bg-transparent border border-white text-white px-6 py-2 rounded-full text-sm md:text-base font-medium hover:bg-white hover:text-black transition-colors">
+                <a href="#"
+                    class="bg-transparent border border-white text-white px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm md:text-base font-medium hover:bg-white hover:text-black transition-colors">
                     Ready to get Started?
                 </a>
             </div>
@@ -150,26 +157,21 @@
 
         <!-- Slide 2 -->
         <div class="swiper-slide relative">
-            <img src="image/slide1.jpg" alt="Slide 2" class="w-full h-full object-cover">
-
+            <img src="image/image 15.jpg" alt="Slide 2" class="w-full h-full object-cover">
             <!-- Content Overlay -->
-            <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
-                <!-- Heading -->
-                <h2 class="text-white text-4xl md:text-6xl font-bold mb-4">Self Education Resources and Infos</h2>
-
-                <!-- Paragraph -->
-                <p class="text-white text-sm md:text-lg mb-6 max-w-2xl">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                <h2 class="text-white text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-4">
+                    Self Education Resources and Infos
+                </h2>
+                <p class="text-white text-xs sm:text-sm md:text-lg lg:text-xl mb-6 max-w-2xl">
                     Learn and grow with access to a wealth of educational materials and resources.
                 </p>
-
-                <!-- Button -->
-                <a href="#" class="bg-transparent border border-white text-white px-6 py-2 rounded-full text-sm md:text-base font-medium hover:bg-white hover:text-black transition-colors">
+                <a href="#"
+                    class="bg-transparent border border-white text-white px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm md:text-base font-medium hover:bg-white hover:text-black transition-colors">
                     Ready to get Started?
                 </a>
             </div>
         </div>
-
-        <!-- Add more slides as needed -->
     </div>
 
     <!-- Swiper Navigation Buttons -->
@@ -179,23 +181,878 @@
     <!-- Swiper Pagination Dots -->
     <div class="swiper-pagination absolute bottom-4 left-1/2 transform -translate-x-1/2"></div>
 </div>
+    <!-- Course Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 sm:px-8 md:px-16 text-center">
+            <h2 class="text-3xl md:text-4xl font-semibold mb-6">Browse Our Top Courses</h2>
+            <p class="text-gray-600 mb-12">We are providing you with lots of courses.</p>
+    
+            <!-- Grid for Courses -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden relative group">
+                    <div class="relative">
+                        <img src="image/image1.jpg" alt="Course 1" class="w-full h-48 object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                        <div class="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 text-xs font-semibold rounded hidden group-hover:block">Best Seller</div>
+                        <div class="absolute bottom-4 left-4 text-white text-lg font-semibold hidden group-hover:block">Preview Course</div>
+                        <div class="absolute top-4 right-4 text-white text-xl hidden group-hover:block">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Introduction Web Design with HTML</h3>
+                        <p class="text-gray-500 mb-4">AJ</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-user text-gray-400 mr-1"></i>
+                                <span>1548</span>
+                                <i class="fas fa-comment ml-4 text-gray-400 mr-1"></i>
+                                <span>25</span>
+                            </div>
+                            <div class="text-red-500 font-semibold">$69.95</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden relative group">
+                    <div class="relative">
+                        <img src="image/image6.jpg" alt="Course 2" class="w-full h-48 object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                        <div class="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 text-xs font-semibold rounded hidden group-hover:block">Best Seller</div>
+                        <div class="absolute bottom-4 left-4 text-white text-lg font-semibold hidden group-hover:block">Preview Course</div>
+                        <div class="absolute top-4 right-4 text-white text-xl hidden group-hover:block">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Designing a Responsive Mobile Website with Muse</h3>
+                        <p class="text-gray-500 mb-4">AJ</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-user text-gray-400 mr-1"></i>
+                                <span>1548</span>
+                                <i class="fas fa-comment ml-4 text-gray-400 mr-1"></i>
+                                <span>25</span>
+                            </div>
+                            <div class="text-red-500 font-semibold">$69.95</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden relative group">
+                    <div class="relative">
+                        <img src="image/image7.jpg" alt="Course 3" class="w-full h-48 object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                        <div class="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 text-xs font-semibold rounded hidden group-hover:block">Best Seller</div>
+                        <div class="absolute bottom-4 left-4 text-white text-lg font-semibold hidden group-hover:block">Preview Course</div>
+                        <div class="absolute top-4 right-4 text-white text-xl hidden group-hover:block">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Adobe XD: Prototyping Tips and Tricks</h3>
+                        <p class="text-gray-500 mb-4">AJ</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-user text-gray-400 mr-1"></i>
+                                <span>1548</span>
+                                <i class="fas fa-comment ml-4 text-gray-400 mr-1"></i>
+                                <span>25</span>
+                            </div>
+                            <div class="text-red-500 font-semibold">$69.95</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 4 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden relative group">
+                    <div class="relative">
+                        <img src="image/image2.jpeg" alt="Course 4" class="w-full h-48 object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                        <div class="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 text-xs font-semibold rounded hidden group-hover:block">Best Seller</div>
+                        <div class="absolute bottom-4 left-4 text-white text-lg font-semibold hidden group-hover:block">Preview Course</div>
+                        <div class="absolute top-4 right-4 text-white text-xl hidden group-hover:block">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Sketch: Creating Responsive SVG</h3>
+                        <p class="text-gray-500 mb-4">AJ</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-user text-gray-400 mr-1"></i>
+                                <span>1548</span>
+                                <i class="fas fa-comment ml-4 text-gray-400 mr-1"></i>
+                                <span>25</span>
+                            </div>
+                            <div class="text-red-500 font-semibold">$69.95</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 5 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden relative group">
+                    <div class="relative">
+                        <img src="image/image6.jpg" alt="Course 5" class="w-full h-48 object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                        <div class="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 text-xs font-semibold rounded hidden group-hover:block">Best Seller</div>
+                        <div class="absolute bottom-4 left-4 text-white text-lg font-semibold hidden group-hover:block">Preview Course</div>
+                        <div class="absolute top-4 right-4 text-white text-xl hidden group-hover:block">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Design Instruments for Communication</h3>
+                        <p class="text-gray-500 mb-4">AJ</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-user text-gray-400 mr-1"></i>
+                                <span>1548</span>
+                                <i class="fas fa-comment ml-4 text-gray-400 mr-1"></i>
+                                <span>25</span>
+                            </div>
+                            <div class="text-red-500 font-semibold">$69.95</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 6 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden relative group">
+                    <div class="relative">
+                        <img src="image/image5.jpg" alt="Course 6" class="w-full h-48 object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                        <div class="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 text-xs font-semibold rounded hidden group-hover:block">Best Seller</div>
+                        <div class="absolute bottom-4 left-4 text-white text-lg font-semibold hidden group-hover:block">Preview Course</div>
+                        <div class="absolute top-4 right-4 text-white text-xl hidden group-hover:block">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">How to be a DJ? Make Electronic Music</h3>
+                        <p class="text-gray-500 mb-4">AJ</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-user text-gray-400 mr-1"></i>
+                                <span>1548</span>
+                                <i class="fas fa-comment ml-4 text-gray-400 mr-1"></i>
+                                <span>25</span>
+                            </div>
+                            <div class="text-red-500 font-semibold">$69.95</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 7 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden relative group">
+                    <div class="relative">
+                        <img src="image/image3.jpg" alt="Course 7" class="w-full h-48 object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                        <div class="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 text-xs font-semibold rounded hidden group-hover:block">Best Seller</div>
+                        <div class="absolute bottom-4 left-4 text-white text-lg font-semibold hidden group-hover:block">Preview Course</div>
+                        <div class="absolute top-4 right-4 text-white text-xl hidden group-hover:block">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">How to Make Beautiful Landscape Photos?</h3>
+                        <p class="text-gray-500 mb-4">AJ</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-user text-gray-400 mr-1"></i>
+                                <span>1548</span>
+                                <i class="fas fa-comment ml-4 text-gray-400 mr-1"></i>
+                                <span>25</span>
+                            </div>
+                            <div class="text-red-500 font-semibold">$69.95</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 8 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden relative group">
+                    <div class="relative">
+                        <img src="image/image4.jpg" alt="Course 8" class="w-full h-48 object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                        <div class="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 text-xs font-semibold rounded hidden group-hover:block">Best Seller</div>
+                        <div class="absolute bottom-4 left-4 text-white text-lg font-semibold hidden group-hover:block">Preview Course</div>
+                        <div class="absolute top-4 right-4 text-white text-xl hidden group-hover:block">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Fashion Photography From Professional</h3>
+                        <p class="text-gray-500 mb-4">AJ</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-user text-gray-400 mr-1"></i>
+                                <span>1548</span>
+                                <i class="fas fa-comment ml-4 text-gray-400 mr-1"></i>
+                                <span>25</span>
+                            </div>
+                            <div class="text-red-500 font-semibold">$69.95</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- View All Button -->
+            <div class="mt-12 text-center">
+                <a href="#" class="bg-blue-700 border border-blue-700 text-white px-6 py-2 rounded-full text-sm md:text-base font-medium hover:bg-white hover:text-black transition-colors">
+                    View All Courses
+                </a>
+                
+            </div>
+        </div>
+    </section>   
 
-       <!-- Placeholder for Course Section -->
-       <div id="courses-section"></div>
+<!-- School Achievements Section -->
+<div class="relative bg-cover bg-center py-20" style="background-image: url('image/back.jpg');">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black opacity-60 pointer-events-none"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 container mx-auto px-4 text-white text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">School Achievements</h2>
+        <p class="mb-10 text-base md:text-lg">Here you can review some statistics about our Education Center</p>
+
+        <!-- Achievements -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16">
+            <!-- Achievement 1 -->
+            <div class="flex flex-col items-center">
+                <i class="fas fa-user-graduate text-5xl mb-4"></i>
+                <h3 class="text-2xl font-semibold">65m+</h3>
+                <p class="text-sm md:text-base">Students Learning</p>
+            </div>
+            <!-- Achievement 2 -->
+            <div class="flex flex-col items-center">
+                <i class="fas fa-graduation-cap text-5xl mb-4"></i>
+                <h3 class="text-2xl font-semibold">58263</h3>
+                <p class="text-sm md:text-base">Graduates</p>
+            </div>
+            <!-- Achievement 3 -->
+            <div class="flex flex-col items-center">
+                <i class="fas fa-puzzle-piece text-5xl mb-4"></i>
+                <h3 class="text-2xl font-semibold">896673</h3>
+                <p class="text-sm md:text-base">Free Courses</p>
+            </div>
+            <!-- Achievement 4 -->
+            <div class="flex flex-col items-center">
+                <i class="fas fa-chalkboard-teacher text-5xl mb-4"></i>
+                <h3 class="text-2xl font-semibold">8570</h3>
+                <p class="text-sm md:text-base">Active Courses</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Upcoming Events Section -->
+<div class="py-20">
+    <div class="container mx-auto px-4">
+        <!-- Heading -->
+        <div class="text-center mb-10">
+            <h2 class="text-3xl md:text-4xl font-bold">Upcoming Events</h2>
+            <p class="text-gray-600">Our upcoming events are listed below.</p>
+        </div>
+
+        <!-- Swiper Container -->
+        <div class="swiper-container-events relative z-10 max-w-5xl mx-auto h-[50vh] sm:h-[55vh] lg:h-[60vh] overflow-hidden">
+            <div class="swiper-wrapper">
+                <!-- Card 1 -->
+                <div class="swiper-slide relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="image/image7.jpg" alt="Event 1" class="w-full h-48 sm:h-64 md:h-80 object-cover">
+                    <!-- Date Tag -->
+                    <div class="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded shadow">
+                        <span class="block text-xs sm:text-sm">28</span>
+                        <span class="block text-xs sm:text-sm">March</span>
+                    </div>
+                    <!-- Card Content -->
+                    <div class="p-3 sm:p-4 bg-white">
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center text-xs sm:text-sm text-gray-600 mb-2">
+                            <i class="fas fa-clock mr-1 sm:mr-2"></i> 8:00 am - 5:00 pm
+                            <i class="fas fa-map-marker-alt ml-1 sm:ml-4 sm:mr-2"></i> Kalopul, Kathmandu
+                        </div>
+                        <h3 class="text-md sm:text-lg font-semibold">A Solution Built for Teachers</h3>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="swiper-slide relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="image/image8.jpg" alt="Event 2" class="w-full h-48 sm:h-64 md:h-80 object-cover">
+                    <!-- Date Tag -->
+                    <div class="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded shadow">
+                        <span class="block text-xs sm:text-sm">28</span>
+                        <span class="block text-xs sm:text-sm">March</span>
+                    </div>
+                    <!-- Card Content -->
+                    <div class="p-3 sm:p-4 bg-white">
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center text-xs sm:text-sm text-gray-600 mb-2">
+                            <i class="fas fa-clock mr-1 sm:mr-2"></i> 8:00 am - 5:00 pm
+                            <i class="fas fa-map-marker-alt ml-1 sm:ml-4 sm:mr-2"></i> Chitwan, Nepal
+                        </div>
+                        <h3 class="text-md sm:text-lg font-semibold">An Overworked Newspaper Editor</h3>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="swiper-slide relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="image/image9.jpg" alt="Event 3" class="w-full h-48 sm:h-64 md:h-80 object-cover">
+                    <!-- Date Tag -->
+                    <div class="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded shadow">
+                        <span class="block text-xs sm:text-sm">28</span>
+                        <span class="block text-xs sm:text-sm">March</span>
+                    </div>
+                    <!-- Card Content -->
+                    <div class="p-3 sm:p-4 bg-white">
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center text-xs sm:text-sm text-gray-600 mb-2">
+                            <i class="fas fa-clock mr-1 sm:mr-2"></i> 8:00 am - 5:00 pm
+                            <i class="fas fa-map-marker-alt ml-1 sm:ml-4 sm:mr-2"></i> Damak, Jhapa
+                        </div>
+                        <h3 class="text-md sm:text-lg font-semibold">Innovative Learning Systems</h3>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="swiper-slide relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="image/image10.jpg" alt="Event 4" class="w-full h-48 sm:h-64 md:h-80 object-cover">
+                    <!-- Date Tag -->
+                    <div class="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded shadow">
+                        <span class="block text-xs sm:text-sm">15</span>
+                        <span class="block text-xs sm:text-sm">April</span>
+                    </div>
+                    <!-- Card Content -->
+                    <div class="p-3 sm:p-4 bg-white">
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center text-xs sm:text-sm text-gray-600 mb-2">
+                            <i class="fas fa-clock mr-1 sm:mr-2"></i> 10:00 am - 2:00 pm
+                            <i class="fas fa-map-marker-alt ml-1 sm:ml-4 sm:mr-2"></i> Bhaktapur, Nepal
+                        </div>
+                        <h3 class="text-md sm:text-lg font-semibold">Digital Transformation in Education</h3>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="swiper-slide relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="image/image1.jpg" alt="Event 5" class="w-full h-48 sm:h-64 md:h-80 object-cover">
+                    <!-- Date Tag -->
+                    <div class="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded shadow">
+                        <span class="block text-xs sm:text-sm">22</span>
+                        <span class="block text-xs sm:text-sm">May</span>
+                    </div>
+                    <!-- Card Content -->
+                    <div class="p-3 sm:p-4 bg-white">
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center text-xs sm:text-sm text-gray-600 mb-2">
+                            <i class="fas fa-clock mr-1 sm:mr-2"></i> 1:00 pm - 6:00 pm
+                            <i class="fas fa-map-marker-alt ml-1 sm:ml-4 sm:mr-2"></i> New Delhi, India
+                        </div>
+                        <h3 class="text-md sm:text-lg font-semibold">Empowering Future Leaders</h3>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="swiper-slide relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="image/image4.jpg" alt="Event 6" class="w-full h-48 sm:h-64 md:h-80 object-cover">
+                    <!-- Date Tag -->
+                    <div class="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded shadow">
+                        <span class="block text-xs sm:text-sm">30</span>
+                        <span class="block text-xs sm:text-sm">June</span>
+                    </div>
+                    <!-- Card Content -->
+                    <div class="p-3 sm:p-4 bg-white">
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center text-xs sm:text-sm text-gray-600 mb-2">
+                            <i class="fas fa-clock mr-1 sm:mr-2"></i> 9:00 am - 4:00 pm
+                            <i class="fas fa-map-marker-alt ml-1 sm:ml-4 sm:mr-2"></i> Tokyo, Japan
+                        </div>
+                        <h3 class="text-md sm:text-lg font-semibold">Innovative Approaches in Teaching</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Popular Course Section -->
+<section id="popular-courses" class="py-8 bg-blue-900">
+    <div class="container mx-auto px-4">
+        <!-- Heading -->
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-white mb-6">Popular Courses</h2>
+        <p class="text-center text-gray-300 mb-10">These are our most popular courses to date.</p>
+
+        <!-- Swiper Container -->
+        <div class="swiper-container popular-courses-slider relative z-10 max-w-5xl mx-auto overflow-hidden">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Course 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden relative group">
+                        <div class="relative">
+                            <img src="image/image1.jpg" alt="Course 1" class="w-full h-[192px] sm:h-[200px] lg:h-[240px] object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-110">
+                            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                            <div class="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 text-xs font-semibold rounded hidden group-hover:block">Top Seller</div>
+                            <div class="absolute bottom-4 left-4 text-white text-lg font-semibold hidden group-hover:block">Preview Course</div>
+                            <div class="absolute top-4 right-4 text-white text-xl hidden group-hover:block">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold mb-2">Fashion Photography from Professional</h3>
+                            <p class="text-gray-500 mb-4">AJ</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <i class="fas fa-user text-gray-400 mr-1"></i>
+                                    <span>1548</span>
+                                    <i class="fas fa-comment ml-4 text-gray-400 mr-1"></i>
+                                    <span>25</span>
+                                </div>
+                                <div class="text-red-500 font-semibold">$69.95</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden relative group">
+                        <div class="relative">
+                            <img src="image/image3.jpg" alt="Course 2" class="w-full h-[192px] sm:h-[200px] lg:h-[240px] object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-110">
+                            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                            <div class="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 text-xs font-semibold rounded hidden group-hover:block">Top Seller</div>
+                            <div class="absolute bottom-4 left-4 text-white text-lg font-semibold hidden group-hover:block">Preview Course</div>
+                            <div class="absolute top-4 right-4 text-white text-xl hidden group-hover:block">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold mb-2">Designing Instrument for Communication</h3>
+                            <p class="text-gray-500 mb-4">AJ</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <i class="fas fa-user text-gray-400 mr-1"></i>
+                                    <span>1548</span>
+                                    <i class="fas fa-comment ml-4 text-gray-400 mr-1"></i>
+                                    <span>25</span>
+                                </div>
+                                <div class="text-red-500 font-semibold">$69.95</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden relative group">
+                        <div class="relative">
+                            <img src="image/image5.jpg" alt="Course 3" class="w-full h-[192px] sm:h-[200px] lg:h-[240px] object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-110">
+                            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                            <div class="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 text-xs font-semibold rounded hidden group-hover:block">Top Seller</div>
+                            <div class="absolute bottom-4 left-4 text-white text-lg font-semibold hidden group-hover:block">Preview Course</div>
+                            <div class="absolute top-4 right-4 text-white text-xl hidden group-hover:block">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold mb-2">Creating Responsive Design</h3>
+                            <p class="text-gray-500 mb-4">AJ</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <i class="fas fa-user text-gray-400 mr-1"></i>
+                                    <span>1548</span>
+                                    <i class="fas fa-comment ml-4 text-gray-400 mr-1"></i>
+                                    <span>25</span>
+                                </div>
+                                <div class="text-red-500 font-semibold">$69.95</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 4 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden relative group">
+                        <div class="relative">
+                            <img src="image/image7.jpg" alt="Course 4" class="w-full h-[192px] sm:h-[200px] lg:h-[240px] object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-110">
+                            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                            <div class="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 text-xs font-semibold rounded hidden group-hover:block">Top Seller</div>
+                            <div class="absolute bottom-4 left-4 text-white text-lg font-semibold hidden group-hover:block">Preview Course</div>
+                            <div class="absolute top-4 right-4 text-white text-xl hidden group-hover:block">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold mb-2">How to Edit Photos Like a Pro</h3>
+                            <p class="text-gray-500 mb-4">AJ</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <i class="fas fa-user text-gray-400 mr-1"></i>
+                                    <span>1548</span>
+                                    <i class="fas fa-comment ml-4 text-gray-400 mr-1"></i>
+                                    <span>25</span>
+                                </div>
+                                <div class="text-red-500 font-semibold">$69.95</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Course 5 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden relative group">
+                        <div class="relative">
+                            <img src="image/image9.jpg" alt="Course 5" class="w-full h-[192px] sm:h-[200px] lg:h-[240px] object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-110">
+                            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                            <div class="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 text-xs font-semibold rounded hidden group-hover:block">Top Seller</div>
+                            <div class="absolute bottom-4 left-4 text-white text-lg font-semibold hidden group-hover:block">Preview Course</div>
+                            <div class="absolute top-4 right-4 text-white text-xl hidden group-hover:block">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold mb-2">Learn Web Development from Scratch</h3>
+                            <p class="text-gray-500 mb-4">AJ</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <i class="fas fa-user text-gray-400 mr-1"></i>
+                                    <span>1548</span>
+                                    <i class="fas fa-comment ml-4 text-gray-400 mr-1"></i>
+                                    <span>25</span>
+                                </div>
+                                <div class="text-red-500 font-semibold">$69.95</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 6 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden relative group">
+                        <div class="relative">
+                            <img src="image/image11.jpg" alt="Course 6" class="w-full h-[192px] sm:h-[200px] lg:h-[240px] object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-110">
+                            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                            <div class="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 text-xs font-semibold rounded hidden group-hover:block">Top Seller</div>
+                            <div class="absolute bottom-4 left-4 text-white text-lg font-semibold hidden group-hover:block">Preview Course</div>
+                            <div class="absolute top-4 right-4 text-white text-xl hidden group-hover:block">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold mb-2">Advanced Techniques in Digital Marketing</h3>
+                            <p class="text-gray-500 mb-4">AJ</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <i class="fas fa-user text-gray-400 mr-1"></i>
+                                    <span>1548</span>
+                                    <i class="fas fa-comment ml-4 text-gray-400 mr-1"></i>
+                                    <span>25</span>
+                                </div>
+                                <div class="text-red-500 font-semibold">$69.95</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 7 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden relative group">
+                        <div class="relative">
+                            <img src="image/image10.jpg" alt="Course 7" class="w-full h-[192px] sm:h-[200px] lg:h-[240px] object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-110">
+                            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                            <div class="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 text-xs font-semibold rounded hidden group-hover:block">Top Seller</div>
+                            <div class="absolute bottom-4 left-4 text-white text-lg font-semibold hidden group-hover:block">Preview Course</div>
+                            <div class="absolute top-4 right-4 text-white text-xl hidden group-hover:block">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold mb-2">Introduction to Data Science</h3>
+                            <p class="text-gray-500 mb-4">AJ</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <i class="fas fa-user text-gray-400 mr-1"></i>
+                                    <span>1548</span>
+                                    <i class="fas fa-comment ml-4 text-gray-400 mr-1"></i>
+                                    <span>25</span>
+                                </div>
+                                <div class="text-red-500 font-semibold">$69.95</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 8 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden relative group">
+                        <div class="relative">
+                            <img src="image/image2.jpeg" alt="Course 8" class="w-full h-[192px] sm:h-[200px] lg:h-[240px] object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-110">
+                            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+                            <div class="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 text-xs font-semibold rounded hidden group-hover:block">Top Seller</div>
+                            <div class="absolute bottom-4 left-4 text-white text-lg font-semibold hidden group-hover:block">Preview Course</div>
+                            <div class="absolute top-4 right-4 text-white text-xl hidden group-hover:block">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold mb-2">Digital Art Masterclass</h3>
+                            <p class="text-gray-500 mb-4">AJ</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <i class="fas fa-user text-gray-400 mr-1"></i>
+                                    <span>1548</span>
+                                    <i class="fas fa-comment ml-4 text-gray-400 mr-1"></i>
+                                    <span>25</span>
+                                </div>
+                                <div class="text-red-500 font-semibold">$69.95</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Swiper Pagination & Navigation -->
+            <div class="flex justify-between items-center max-w-5xl mx-auto mt-4">
+                <button class="swiper-button-prev text-blue-500 cursor-pointer">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="swiper-button-next text-blue-500 cursor-pointer">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="flex justify-center mt-6">
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- Testimonial Section -->
+<section id="testimonials" class="py-6 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-2xl font-bold text-center text-gray-900 mb-4">What People Say</h2>
+      <p class="text-center text-gray-500 mb-6">Our Opinions from different people.</p>
+  
+      <!-- Swiper Container -->
+      <div class="swiper-container-testomonial relative z-0 mx-auto h-[60vh] sm:h-[50vh] lg:h-[50vh] overflow-hidden">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide flex flex-col sm:flex-row sm:justify-around">
+            <!-- Testimonial 1 -->
+            <div class="testimonial bg-white p-6 rounded-lg shadow-lg max-w-xs mx-2 mb-4 sm:mb-0 hover:bg-blue-500 hover:text-white transition duration-300">
+              <div class="mb-4">
+                <i class="fas fa-quote-left text-gray-300 text-4xl"></i>
+                <p class="text-gray-600 mt-2">It was really fun getting to know the team during the project. They were all helpful in answering my questions and made me feel completely at ease. The design ended up being twice as good as I could have ever envisioned!</p>
+              </div>
+              <div class="flex items-center">
+                <img src="image/bill.jpeg" alt="Suyog Gautam" class="w-12 h-12 rounded-full border-2 border-white hover:border-blue-500">
+                <div class="ml-4">
+                  <h3 class="text-lg font-semibold">Bill Gates</h3>
+                  <p class="text-sm">Client</p>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial 2 (Middle) -->
+            <div class="testimonial bg-white p-6 rounded-lg shadow-lg max-w-xs mx-2 mb-4 sm:mb-0 hover:bg-blue-500 hover:text-white transition duration-300">
+              <div class="mb-4">
+                <i class="fas fa-quote-left text-gray-300 text-4xl"></i>
+                <p class="text-gray-600 mt-2">It was really fun getting to know the team during the project. They were all helpful in answering my questions and made me feel completely at ease. The design ended up being twice as good as I could have ever envisioned!</p>
+              </div>
+              <div class="flex items-center">
+                <img src="image/Test1.jpg" alt="Hari Bahadur" class="w-12 h-12 rounded-full border-2 border-white hover:border-blue-500">
+                <div class="ml-4">
+                  <h3 class="text-lg font-semibold">Jenelia Parker</h3>
+                  <p class="text-sm">Co-founder, Coffee Inc</p>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="testimonial bg-white p-6 rounded-lg shadow-lg max-w-xs mx-2 mb-4 sm:mb-0 hover:bg-blue-500 hover:text-white transition duration-300">
+              <div class="mb-4">
+                <i class="fas fa-quote-left text-gray-300 text-4xl"></i>
+                <p class="text-gray-600 mt-2">It was really fun getting to know the team during the project. They were all helpful in answering my questions and made me feel completely at ease. The design ended up being twice as good as I could have ever envisioned!</p>
+              </div>
+              <div class="flex items-center">
+                <img src="image/Mark.jpg" alt="Aryan Jaiswal" class="w-12 h-12 rounded-full border-2 border-white hover:border-blue-500">
+                <div class="ml-4">
+                  <h3 class="text-lg font-semibold">Mark Seih</h3>
+                  <p class="text-sm">Graphic Designer, Owl Eyes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Slide 2 -->
+          <div class="swiper-slide flex flex-col sm:flex-row sm:justify-around">
+            <!-- Testimonial 4 -->
+            <div class="testimonial bg-white p-6 rounded-lg shadow-lg max-w-xs mx-2 mb-4 sm:mb-0 hover:bg-blue-500 hover:text-white transition duration-300">
+              <div class="mb-4">
+                <i class="fas fa-quote-left text-gray-300 text-4xl"></i>
+                <p class="text-gray-600 mt-2">The team is fantastic! Their guidance and assistance were invaluable throughout the project. I am incredibly satisfied with the outcome and would highly recommend their services!</p>
+              </div>
+              <div class="flex items-center">
+                <img src="image/Seri.jpg" alt="Bikash Bhattarai" class="w-12 h-12 rounded-full border-2 border-white hover:border-blue-500">
+                <div class="ml-4">
+                  <h3 class="text-lg font-semibold">Seri Paul</h3>
+                  <p class="text-sm">Marketing Head, Creative Agency</p>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial 5 (Middle) -->
+            <div class="testimonial bg-white p-6 rounded-lg shadow-lg max-w-xs mx-2 mb-4 sm:mb-0 hover:bg-blue-500 hover:text-white transition duration-300">
+              <div class="mb-4">
+                <i class="fas fa-quote-left text-gray-300 text-4xl"></i>
+                <p class="text-gray-600 mt-2">Working with the team was a breeze. They were always available to provide answers and solutions. The design was beyond what we imagined, and we look forward to future projects!</p>
+              </div>
+              <div class="flex items-center">
+                <img src="image/Aryan.jpg" alt="Aryan Jaiswal" class="w-12 h-12 rounded-full border-2 border-white hover:border-blue-500">
+                <div class="ml-4">
+                  <h3 class="text-lg font-semibold">Aryan Jaiswal</h3>
+                  <p class="text-sm">CEO, Tech Innovators</p>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial 6 -->
+            <div class="testimonial bg-white p-6 rounded-lg shadow-lg max-w-xs mx-2 mb-4 sm:mb-0 hover:bg-blue-500 hover:text-white transition duration-300">
+              <div class="mb-4">
+                <i class="fas fa-quote-left text-gray-300 text-4xl"></i>
+                <p class="text-gray-600 mt-2">It was a pleasure to work with such a dedicated and talented team. The results were exceptional, and I highly recommend them to anyone looking for top-notch design services!</p>
+              </div>
+              <div class="flex items-center">
+                <img src="image/sandes.jpg" alt="Sandesh Shrestha" class="w-12 h-12 rounded-full border-2 border-white hover:border-blue-500">
+                <div class="ml-4">
+                  <h3 class="text-lg font-semibold">Sandesh Shrestha</h3>
+                  <p class="text-sm">Project Manager, Media House</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+<!--- Text Section -->
+<section class="py-20 bg-gray-50 ">
+    <div class="container mx-auto flex flex-col md:flex-row justify-center gap-8 px-4 min-h-[250px]">
+      <!-- Section 1: Become an Instructor -->
+      <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300 w-full md:w-1/2">
+        <h3 class="text-2xl font-semibold mb-4">Become an Instructor</h3>
+        <p class="text-gray-600 mb-6">Teach what you love. Dove School gives you the tools to create an online course.</p>
+        
+        <a href="#" class="inline-block px-6 py-3 bg-blue-700 text-white rounded-lg border border-transparent hover:bg-transparent hover:border-blue-500 hover:text-blue-500 transition-colors duration-300">
+            Start Teaching <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+        
+      </div>
+      
+      <!-- Section 2: Dove School For Business -->
+      <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300 w-full md:w-1/2">
+        <h3 class="text-2xl font-semibold mb-4">Dove School For Business</h3>
+        <p class="text-gray-600 mb-6">Get unlimited access to 2,500 of Edemy's top courses for your team.</p>
+        <a href="#" class="inline-block px-6 py-3 bg-gray-900 text-white rounded-lg border border-transparent hover:bg-transparent hover:border-black hover:text-black transition-colors duration-300">
+            Doing Business <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+ <!-- Footer Section -->
+<footer class="bg-gray-900 text-white py-10">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+      <!-- Contact Column -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Contact</h3>
+        <p class="text-gray-400">329 Rudramati Marga, Kalopul, Nepal.</p>
+        <p class="text-gray-400 mt-2">123 456 7890</p>
+        <p class="text-gray-400">support@edumy.com</p>
+      </div>
+      <!-- Company Column -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Company</h3>
+        <ul>
+          <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Become a Teacher</a></li>
+        </ul>
+      </div>
+      <!-- Programs Column -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Programs</h3>
+        <ul>
+          <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Nanodegree Plus</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Veterans</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Georgia</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Self-Driving Car</a></li>
+        </ul>
+      </div>
+      <!-- Support Column -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Support</h3>
+        <ul>
+          <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Documentation</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Forums</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Language Packs</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Release Status</a></li>
+        </ul>
+      </div>
+      <!-- Mobile Column -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Mobile</h3>
+        <div class="space-y-4">
+          <a href="#" class="flex items-center bg-gray-800 p-4 rounded-lg hover:bg-gray-700">
+            <i class="fab fa-apple text-2xl mr-4"></i>
+            <div>
+              <p class="text-sm text-gray-300">App Store</p>
+              <p class="text-xs text-gray-500">Available now on the</p>
+            </div>
+          </a>
+          <a href="#" class="flex items-center bg-gray-800 p-4 rounded-lg hover:bg-gray-700">
+            <i class="fab fa-google-play text-2xl mr-4"></i>
+            <div>
+              <p class="text-sm text-gray-300">Google Play</p>
+              <p class="text-xs text-gray-500">Get in on</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Lower Footer Section -->
+    <div class="bg-gray-800 mt-10 py-4 px-6">
+      <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+        <!-- Left Side: Logo and Links -->
+        <div class="flex flex-col md:flex-row items-center md:space-x-5 mb-4 md:mb-0">
+          <img src="image/header-logo.png" alt="Edumy" class="h-10 mb-4 md:mb-0">
+          <h6 class="text-white text-xl md:text-lg">EDUMY</h6>
+          <!-- New Links Section -->
+          <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-sm text-gray-500">
+            <li><a href="#" class="hover:text-white">Home</a></li>
+            <li><a href="#" class="hover:text-white">Privacy</a></li>
+            <li><a href="#" class="hover:text-white">Terms</a></li>
+            <li><a href="#" class="hover:text-white">Sitemap</a></li>
+            <li><a href="#" class="hover:text-white">Purchase</a></li>
+          </ul>
+        </div>
+        <!-- Right Side: Social Icons -->
+        <div class="flex flex-wrap justify-center md:justify-end space-x-4">
+          <a href="#" class="text-gray-500 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-gray-500 hover:text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-gray-500 hover:text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-gray-500 hover:text-white"><i class="fab fa-pinterest"></i></a>
+          <a href="#" class="text-gray-500 hover:text-white"><i class="fab fa-dribbble"></i></a>
+          <a href="#" class="text-gray-500 hover:text-white"><i class="fab fa-google"></i></a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Copyright Section -->
+    <div class="bg-gray-900 py-4 px-6 text-center">
+      <p class="text-sm text-gray-500">© Edumy 2019. All Rights Reserved.</p>
+    </div>
+  
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="fixed bottom-10 right-10 bg-gray-800 p-3 rounded-full shadow-md text-white hover:bg-gray-700 transition duration-300">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </footer>
+  
 
     <!-- JavaScript Files -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
-    <script src="public/app.js"></script>
-    
+  
 </body>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        fetch('card.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('courses-section').innerHTML = data;
-            });
-    });
-</script>
+
 </html>
